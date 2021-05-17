@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'top#index'
+  resources :top, only: :index
+  resources :profile, only: :index
+  resources :works, only: :index
+  resources :email, only: [:new, :create]
 end
