@@ -1,2 +1,94 @@
-<h1>Profile#index</h1>
-<p>Find me in app/views/profile/index.html.erb</p>
+<%= render 'shared/header' %>
+
+<%#----- プロフィールページメイン -----#%>
+<div class="profile-main">
+  <div class="profile-top">
+    <div class="profile-left">
+      <div class="head-text animate__animated animate__fadeInLeft">
+        <p>自己紹介</p>
+        <p>荒井にはいくつかの<span>顔</span>があります</p><br>
+        <p>そんな荒井をざっくりと</p>
+        <p>かつシンプルに</p><br>
+        <p>ご紹介します</p><br>
+        <p>Navigationメニューより</p>
+        <p>ご移動いただけます</p>
+        <div class="twitter-link">
+          <%= link_to "twitterはこちら", "https://twitter.com/shotaroaraidayo", class: "link-twitter-tag fa-twitter-square", target: :_blank, rel: "noopener noreferrer" %>
+        </div>
+      </div>
+    </div>
+    <div class="profile-right">
+      <nav class="navigation animate__animated animate__fadeInUp">
+        <p>Navigation</p>
+        <li><a href="#program">as Web Programmer</a></li>
+        <li><a href="#music">as Guitarist</a></li>
+        <li><a href="#runner">as Runner</a></li>
+        <li><a href="#hobby">my Hobby</a></li>
+        <li><a href="#toyama">from Toyama</a></li>
+      </nav>
+    </div>  
+  </div>
+
+<%#----- プロフィール・スクロール -----#%>
+  <div class="profiles profile-program animate__animated animate__fadeInLeft" id="program">
+    <div class="profile-program-text profile-texts">
+      <p><span>Web</span>プログラマーです</p>
+      <p><span>2021.1</span> 駆け出しスタート</p>
+      <p><span>HTML / CSS / Ruby / Java Script / Ruby on Rails</span></p><br>
+      <p>36歳からの挑戦</p>
+      <p>色んな誰かの課題を解決</p>
+      <p>実現目指して日々<span>Try&Error</span></p>
+      <div class="github-link">
+        <%= link_to "Git hubはこちら", "https://github.com/shotaro-arai", class: "link-github-tag fab fa-github-square", target: :_blank, rel: "noopener noreferrer" %>
+      </div>
+      <h3 class="genre-title">prOGram</h3>
+    </div>
+  </div>
+  <div class="profiles profile-music animate__animated animate__fadeInLeft" id="music">
+    <div class="profile-music-text profile-texts">
+      <p>ギタリストです</p>
+      <p><span>Rock / Blues / Country / Pops</span></p><br>
+      <p><span>The Beatles</span>と</p>
+      <p><span>The Carpenters</span>が大好きです</p>
+      <p>シンガーソングライター活動も少し</p>
+      <p>作詞・作曲・編曲・DTM</p>
+      <div class="tunecore-link">
+        <%= link_to "tunecoreにて楽曲配信中", "https://www.tunecore.co.jp/artists/Shotaro-Arai", class: "link-tunecore-tag fa-music", target: :_blank, rel: "noopener noreferrer"  %>
+      </div>
+      <h3>Music</h3>
+    </div>
+  </div>
+  <div class="profiles profile-run animate__animated animate__fadeInLeft" id="runner">
+    <div class="profile-run-text profile-texts">
+      <p>ランナーです</p>
+      <p>フルマラソン2時間57分39秒</p>
+      <p>目標はサブ2.5！</p><br>
+      <p>日々身体の研究にあくせく</p>
+      <p>気づいて試して変化して</p><br>
+      <p>パーソナルストレッチ教わりました</p>
+      <p>ランニングコーチも将来の夢です</p>
+      <h3>Run</h3>
+    </div>
+  </div>
+  <div class="profiles profile-run animate__animated animate__fadeInLeft" id="runner">
+    <div class="profile-text profile-texts">
+      <p>趣味</p>
+      <p>読書と</p><br>
+      <p>映画と</p><br>
+      <p>ビールと</p><br>
+      <p>旅</p>
+      <h3>my Hobby</h3>
+    </div>
+  </div>
+  <div class="profiles profile-toyama animate__animated animate__fadeInLeft" id="toyama">
+    <div class="profile-toyama-text profile-texts">
+      <p>富山出身です</p>
+      <p>まいどはや</p><br>
+      <p>自然が豊かで</p>
+      <p>空気もキレイ</p><br>
+      <p>立山連峰・おわら風の盆</p>
+      <p>みんなで行かんまいけ</p>
+      <h3>From Toyama</h3>
+    </div>
+  </div>
+</div>
