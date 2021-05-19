@@ -1,3 +1,283 @@
-// Place all the styles related to the profile controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//----プロフィールページのみ適用----//
+.profile{
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+.profile header .animate__animated{
+  animation:none;
+}
+//-----------ここまで-----------//
+
+
+//++ プロフィールページトップ ++//
+.profile-top{
+  display: flex;
+  width: 100%;
+}
+
+.head-text{
+  font-size: 18px;
+  position: absolute;
+  top: 9rem;
+  left: 2.5rem;
+  color:#1f1a1a;
+  letter-spacing: 2px;
+}
+
+.head-text span{
+  color: #9e9a0e;
+}
+
+//左側
+.profile-left{
+  width: 50%;
+  height: 100vh;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+}
+
+// 右側・ナビゲーションメニュー
+.profile-right{
+  width: 50%;
+  position: relative;
+}
+
+.navigation{
+  background-color: #ffffffb3;
+  width: 360px;
+  height: 360px;
+  margin-top: 9rem;
+  margin-left: 8.5rem;
+  border: 4px double rgb(51, 49, 49);
+  padding: 10px 15px;
+  position: fixed;
+  z-index: 1;
+}
+
+.navigation p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  margin-bottom: 15px;
+
+//-- 文字にグラデーション --//
+  background: linear-gradient(#1d90b3,#bfd41d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.navigation li{
+  list-style: none;
+}
+
+.navigation li a{
+  font-size: 18px;
+  text-decoration: none;
+  list-style: square;
+  color: black;
+  line-height: 42px;
+  display: block;
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.navigation li a:hover{
+  color: rgb(111, 214, 245);
+}
+
+
+//-- twitterへのリンク --//
+.twitter-link{
+  margin-top: 50px;
+}
+
+.link-twitter-tag{
+  color: #0faed2;
+  text-decoration: none;
+}
+
+.link-twitter-tag::before{
+  font-family: fontawesome;
+  font-size: 18px;
+  color: #0faed2;
+  margin-right: 10px;
+}
+
+.link-twitter-tag:hover{
+  border-bottom: 1px solid #0faed2;
+}
+
+//++ プロフィール・スクロールページ ++//
+.profiles{
+  padding: 20px 0 20px 10px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+
+//++ プログラマー ++//
+.profile-program{
+  background-image: image-url("IMG_20210519_123531.jpg");
+  background-size: cover;
+  background-position: 0 -10px;
+  background-color: #ffffff24;
+  background-blend-mode:soft-light;
+  background-clip: border-box;
+}
+
+.profile-program-text{
+  font-size: 18px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  color:#ffffff;
+}
+
+//-- Githubへのリンク --//
+.github-link{
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.link-github-tag{
+  text-decoration: none;
+  color: #b47ae8;
+  letter-spacing: 2px;
+}
+
+.link-github-tag::before{
+  font-size: 18px;
+  font-family: fontawesome;
+  text-decoration: none;
+  color: #b47ae8;
+  margin-right: 10px;
+}
+
+.link-github-tag:hover{
+  border-bottom: 1px solid #b47ae8;
+}
+
+
+//++ ギタリスト ++//
+.profile-music{
+  background-image: image-url("IMG_-9q4124.jpg");
+  background-size: cover;
+  background-color: #7b6161a6;
+  background-blend-mode:luminosity;
+  background-position: 0 -10px;
+  background-clip: border-box;
+}
+
+.profile-music-text{
+  font-size: 20px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  color:#ffffff;
+}
+
+//-- tunecoreへのリンク --//
+.tunecore-link{
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.link-tunecore-tag{
+  text-decoration: none;
+  color: #ffd400;
+  letter-spacing: 2px;
+}
+
+.link-tunecore-tag::before{
+  font-size: 18px;
+  font-family: fontawesome;
+  text-decoration: none;
+  margin-right: 10px;
+  color: #ff2300e0;
+}
+
+.link-tunecore-tag:hover{
+  border-bottom: 1px solid #ffd400;
+}
+
+
+//++ ランナー ++//
+.profile-run{
+  background-image: image-url("5649-605961_full.jpg");
+  background-size: cover;
+  background-position: 0 -310px;
+  background-color: #ffffffa6;
+  background-blend-mode:hard-light;
+  background-clip: border-box;
+}
+
+.profile-run-text{
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  color:#000000;
+}
+
+.profile-toyama{
+  background-image: image-url("toyama_image.png");
+  background-size: cover;
+  background-position-y: -90px;
+  background-color: #ffffff61;
+  background-blend-mode:soft-light;
+  background-clip: border-box;
+}
+
+.profile-toyama-text{
+  font-size: 18px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  color:#2b1c1c;
+}
+
+
+.profile-texts h3{
+  font-size: 8rem;
+  font-family: 'Major Mono Display', monospace;
+  color: #ec7a7ad4;
+  margin-top: 8rem;
+}
+
+.profile-texts p{
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+.profile-texts span{
+  font-family: 'Lato', sans-serif;
+}
+
+.profile-texts p:nth-child(1){
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+//-- 特殊文字 --//
+
+.head-text p:nth-child(1):before,
+.profile-texts p:nth-child(1):before{
+  content: "\0ab";
+  font-size: 24px;
+  display: inline-block;
+}
+
+.head-text p:nth-child(1):after,
+.profile-texts p:nth-child(1):after{
+  content: "\0bb";
+  font-size: 24px;
+  display: inline-block;
+}

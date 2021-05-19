@@ -1,3 +1,155 @@
-// Place all the styles related to the works controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//----作品ページのみ適用----//
+.works{
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+.works header .animate__animated{
+  animation:none;
+}
+//-----------ここまで-----------//
+
+
+//++ 作品ページトップ ++//
+.works-top{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.works-text{
+  margin-top: 7rem;
+  color: #1f1a1a;
+}
+
+.works-text p{
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+//左側
+.works-left{
+  width: 50%;
+  height: 500px;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+}
+
+.works-text p:nth-child(1){
+  margin-bottom: 10px;
+}
+
+// 右側・言語紹介
+.works-right{
+  width: 50%;
+  height: 800px;
+  position: relative;
+}
+
+.language-genre{
+  font-family: 'DotGothic16', sans-serif;
+  height: 180px;
+  width: 360px;
+  margin-top: 9rem;
+  margin-left: 8.5rem;
+  border: 7px double rgb(255, 255, 255);
+  border-radius:10px 10px 10px 10px / 10px 10px 10px 10px;
+  background-color: black;
+  box-shadow:0 0 0 8px black;
+  color: white;
+  position: absolute;
+  padding: 20px;
+}
+
+.others{
+  margin-top: 17rem;
+}
+
+.others .language-left{
+  padding-right: 50px;
+}
+
+.language{
+  display: flex;
+  justify-content: space-around;
+}
+
+.language-genre p{
+  letter-spacing: 2px;
+  position: absolute;
+  top: -15px;
+  left: 40%;
+  background-color: black;
+  padding: 0 5px;
+}
+
+.language-genre li{
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+
+//++ 作品一覧 ++//
+.works-content{
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+}
+
+.works-box{
+  padding-bottom: 60px;
+  width: 360px;
+  margin: 0 calc((100% - (360px * 3)) / 4);
+}
+
+.work-image{
+  width: 300px;
+  height: 180px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 1px 1px #212020a3;
+}
+
+.works-title{
+  font-size: 20px;
+}
+
+.works-title h3{
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+
+.works-description{
+  line-height: 23px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.link-page{
+  font-size: 18px;
+  margin-top: 100px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.link-page:hover{
+  color: rgb(87, 181, 209);
+  border-bottom: 1px solid rgb(87, 181, 209)
+}
+
+.works-text p:nth-child(1):before{
+  content: "\0ab";
+  font-size: 24px;
+  display: inline-block;
+}
+
+.works-text p:nth-child(1):after{
+  content: "\0bb";
+  font-size: 24px;
+  display: inline-block;
+}
