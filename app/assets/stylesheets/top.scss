@@ -1,0 +1,120 @@
+//------トップページのみ適用------//
+.top{
+  background-size: cover;
+}
+//-----------ここまで-----------//
+
+
+//++ メイン ++//
+.main{
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+}
+
+
+// 左上
+.left-side{
+  width: 50%;
+}
+
+.pr{
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  display: flex;
+}
+
+.pr-text{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #1f1a1a;
+}
+
+.pr-text p:nth-child(1){
+  margin-bottom: 10px;
+}
+
+//-- 特殊文字 --//
+.pr-text p:nth-child(1):before{
+  content: "\0ab";
+  font-size: 24px;
+  display: inline-block;
+}
+
+.pr-text p:nth-child(1):after{
+  content: "\0bb";
+  font-size: 24px;
+  display: inline-block;
+}
+
+.pr-text span{
+  color: #9e9a0e;
+}
+
+.arai-image{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  margin-left: 6rem;
+  filter: opacity(75%);
+}
+
+
+// 左下
+.name-logo{
+  width: 400px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  padding: 10px;
+}
+
+.name{
+  font-size: 8rem;
+  font-family: 'Major Mono Display', monospace;
+  line-height: 95px;
+  color: #ec7a7ad4;
+}
+
+.name span{
+  animation: text-color 24s infinite;
+  animation-delay: 2s;
+}
+
+//-- 色が変化するアニメーション --//
+@keyframes text-color{
+  0%{color: #ec7a7ad4;}
+  12.5%{color: rgb(231, 166, 128);}
+  25%{color: rgb(233, 186, 141);}
+  37.5%{color: rgb(212, 206, 120);}
+  50%{color: rgb(218, 219, 127)}
+  62.5%{color: rgb(146, 253, 217);}
+  75%{color: rgb(145, 248, 252);}
+  87.5%{color: rgb(240, 181, 235);}
+  100%{color: rgb(233, 134, 143);}
+}
+
+
+// 右側
+.right-side{
+  position: relative;
+  width: 50%;
+}
+
+.logo{
+  height: 22rem;
+  width: 22rem;
+  margin-top: 3rem;
+  margin-left: 10rem;
+}
+
+.logo-stay{
+  position: absolute;
+  height: 22rem;
+  width: 22rem;
+  box-shadow: 2px 2px 7px 0 rgb(100, 100, 100);
+  top: 3rem;
+  left: 10rem;
+  background-color: #ffffff99;
+  z-index: -1;
+}

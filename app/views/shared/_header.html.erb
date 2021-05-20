@@ -1,0 +1,10 @@
+<header>
+  <div class="menu-bar">
+    <%= link_to root_path do%>
+      <%= image_tag "port_favicon.png", class: "icon animate__animated animate__flip animate__delay-2s" %>
+    <% end %>
+    <%= link_to "profile", profile_index_path, class: "menu animate__animated animate__flip animate__delay-2s" %>
+    <%= link_to "works", works_path,  class: "menu animate__animated animate__flip animate__delay-2s" %>
+    <%= link_to "email", new_email_path, class: "menu animate__animated animate__flip animate__delay-2s" %>
+  </div>
+</header>

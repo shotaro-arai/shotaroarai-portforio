@@ -1,0 +1,112 @@
+//------連絡ページのみ適用------//
+.email{
+  background-size: cover;
+}
+
+.email header .animate__animated{
+  animation:none;
+}
+//-----------ここまで-----------//
+
+.email-main{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.email-text{
+  margin-top: 7rem;
+  color: #1f1a1a;
+}
+
+.email-text p{
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+//左側
+.email-left{
+  width: 50%;
+  height: 500px;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+}
+
+.email-text p:nth-child(1){
+  margin-bottom: 10px;
+}
+
+
+//++ メールフォーム ++//
+.email-content{
+  padding-top: 8rem;
+}
+
+.email-form{
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #1f1a1a;
+}
+
+.box{
+  width: 400px;
+  padding: 3px 10px;
+  background-color: white;
+  box-shadow: 0 0 1px 0 black;
+  border-radius: 1px;
+}
+
+.text-box{
+  width: 400px;
+  height: 140px;
+  padding: 5px 10px;
+  background-color: white;
+  box-shadow: 0 0 1px 0 black;
+  border-radius: 3px;
+}
+
+::placeholder{
+  color: rgba(133, 129, 129, 0.664);
+}
+
+
+//-- 送信ボタン --//
+.fa-paper-plane{
+  font-size: 30px;
+  color:rgb(87, 181, 209);
+  margin-bottom: 100px;
+  position: absolute;
+  top: 460px;
+  left: 36%;
+}
+
+.fa-paper-plane:hover{
+  transform:scale(1.2);
+}
+
+
+.email-text p:nth-child(1):before{
+  content: "\0ab";
+  font-size: 24px;
+  display: inline-block;
+}
+
+.email p:nth-child(1):after{
+  content: "\0bb";
+  font-size: 24px;
+  display: inline-block;
+}

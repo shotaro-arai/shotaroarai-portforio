@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+ body{
+  background-color: #9c6f4f7a;
+  background-image: image-url("white0040.png"), image-url("blue0030.png");
+  background-blend-mode:screen ;
+  height: 100%;
+  width: 100%;
+}

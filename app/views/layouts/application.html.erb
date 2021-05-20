@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ShotaroaraiPortforio</title>
+    <title>ShotaroArai-Portforio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+<!-- リセット -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+<!-- フォント -->
+    <script src="https://kit.fontawesome.com/bac83e847f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Lato&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&family=Fredericka+the+Great&family=Lato&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=DotGothic16&family=Fjalla+One&family=Fredericka+the+Great&family=Lato&family=Major+Mono+Display&display=swap" rel="stylesheet">
+<!-- アニメーション -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
-  <body>
+  <body class="<%= controller.controller_name %>">
     <%= yield %>
   </body>
 </html>

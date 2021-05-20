@@ -1,0 +1,27 @@
+<%= render 'shared/header' %>
+
+<%#----- トップページメイン -----%>
+<div class="main">
+  <div class="left-side">
+    <div class="pr"> 
+      <div class="pr-text animate__animated animate__flipInX">
+        <p>ようこそ</p>
+        <p>荒井 翔太郎です</p>
+        <p>Webプログラマー、駆け出し中</p>
+        <p>ギタリストやランナーでもあります</p>
+        <p>こちらでは<span>Webプログラマー荒井</span>を紹介</p><br>
+      </div>
+      <div class="arai">
+        <%= image_tag "shoicon_image.png", class: "arai-image animate__animated animate__rotateInDownLeft animate__delay-2s" %>
+      </div>
+    </div>
+    <div class="name-logo">
+      <h2 class="name">Shotaro</h2>
+      <h2 class="name"><span>A</span>rai</h2>
+    </div>
+  </div>
+  <div class="right-side">
+    <%=image_tag "port_logo5.png", class: "logo animate__animated animate__lightSpeedInLeft animate__repeat-1 animate__delay-2s" %>
+    <%=image_tag "port_logo6.png", class: "logo-stay animate__animated animate__rubberBand animate__delay-2s" %>
+  </div>
+</div>

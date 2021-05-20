@@ -1,0 +1,85 @@
+<%= render 'shared/header' %>
+
+<%#----- 作品ページメイン -----%>
+<div class="works-main">
+  <div class="works-top">
+    <div class="works-left"> 
+      <div class="works-text">
+        <p>成果物</p>
+        <p>作成したアプリやWebページたちです</p><br>
+        <p>まだまだ数少ないですが</p>
+        <p>随時、新作企画＆開発中</p>
+        <p>また随時、追加実装中</p><br>
+        <p>言語も技術も知識も日々少しずつ増えていく</p>
+        <p>学ぶって楽しいことですね</p>
+      </div>
+    </div>
+    <div class="works-right">
+      <nav class="language-genre animate__animated animate__fadeInUp">
+        <p>言語など</p>
+        <div class="language">
+          <ul class="language-left">  
+            <li>HTML</li>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+          </ul>
+          <ul class="language-right">  
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="language-genre others animate__animated animate__fadeInUp">
+        <p>その他</p>
+        <div class="language">
+          <ul class="language-left">  
+            <li>MySQL</li>
+            <li>Git hub</li>
+            <li>AWS S3</li>
+          </ul>
+          <ul class="language-right">  
+            <li>Git</li>
+            <li>Heroku</li>
+            <li>AWS EC2</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="works-content" id="works">
+    <div class="works-box">
+      <div class="works-image">
+        <%= image_tag "shiori_image.png", class: "work-image" %>
+      </div>
+      <div class="works-title">
+        <h3>Shiori</h3>
+      </div>
+      <div class="works-description">
+        <p>本の一節を引用し</p>
+        <p>あなたの意見や感想も投稿できるアプリ</p>
+        <p>ユーザー同志の交流やアウトプット</p>
+        <p>またマイページにはあなたの投稿一覧が</p>
+        <p>つまりあなたが気になった</p>
+        <p>本の中身が詰まったライブラリ!!</p>
+      </div>
+      <%= link_to "shioriのページへ", "https://shiori-210429.herokuapp.com/", class:"link-page" %>
+    </div>
+    <div class="works-box">
+      <div class="works-image">
+        <%= image_tag "portforio_image.png", class: "work-image" %>
+      </div>
+      <div class="works-title">
+        <h3>ShotaroArai's Portfolio</h3>
+      </div>
+      <div class="works-description">
+        <p>こちらのサイト</p>
+        <p>マスコットキャラは『SAくん』</p>
+        <p>荒井の分身のようなものです</p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
