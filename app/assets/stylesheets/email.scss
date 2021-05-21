@@ -1,4 +1,4 @@
-//------連絡ページのみ適用------//
+//------お問合せページのみ適用------//
 .email{
   background-size: cover;
 }
@@ -105,7 +105,7 @@
   display: inline-block;
 }
 
-.email p:nth-child(1):after{
+.email-text p:nth-child(1):after{
   content: "\0bb";
   font-size: 24px;
   display: inline-block;

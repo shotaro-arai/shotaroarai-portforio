@@ -1,0 +1,44 @@
+//------送信完了ページのみ適用------//
+.complete{
+  background-size: cover;
+}
+
+.complete header .animate__animated{
+  animation:none;
+}
+//-----------ここまで-----------//
+
+.complete-main{
+  position: relative;
+}
+
+.thanks{
+  padding-top: 20rem;
+  color: #1f1a1a;
+}
+
+.thanks p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding-left: 17px;
+  text-align: center;
+}
+
+.thanks-logo{
+  text-align: center;
+  font-family: 'Allura', cursive;
+  font-size: 80px;
+  padding: 10px 20px;
+  transform: rotate(-8deg);
+  position: absolute;
+  top: 150px;
+  left: 0;
+
+  //-- 文字にグラデーション --//
+  background: linear-gradient(90deg, #ffd5e7,#77d8fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}

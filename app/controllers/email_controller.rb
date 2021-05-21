@@ -8,6 +8,7 @@ class EmailController < ApplicationController
     if @email.valid?
       @email.save
       EmailMailer.send_mail(@email).deliver_now
+      redirect_to email_complete_path
     else
       render 'new'
     end
