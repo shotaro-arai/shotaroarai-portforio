@@ -178,6 +178,11 @@
   color:#ffffff;
 }
 
+.profile-music-text p,
+.link-tunecore-tag{
+  text-shadow: 1px 1px 6px black;
+}
+
 //-- tunecoreへのリンク --//
 .tunecore-link{
   padding-top: 20px;
@@ -186,7 +191,7 @@
 
 .link-tunecore-tag{
   text-decoration: none;
-  color: #ffd400;
+  color: #ffe872;
   letter-spacing: 2px;
 }
 
@@ -222,6 +227,33 @@
   color:#000000;
 }
 
+.profile-run-text p{
+  text-shadow: 1px 1px 2px rgb(255, 248, 219);
+}
+
+//++ 趣味 ++//
+.profile-hobby{
+  background-image: image-url("IMG_20180713_165819-1.png");
+  background-size: cover;
+  background-color: #ffffffa6;
+  background-blend-mode:hard-light;
+  background-clip: border-box;
+}
+
+.profile-hobby-text{
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  color:#ffffff;
+}
+
+.profile-hobby-text p{
+  text-shadow: 1px 1px 3px black;
+}
+
+//++ 富山 ++//
 .profile-toyama{
   background-image: image-url("toyama_image.png");
   background-size: cover;
@@ -239,12 +271,16 @@
   color:#2b1c1c;
 }
 
+.profile-toyama-text p{
+  text-shadow: 1px 1px 3px #aaf3ff99;
+}
+
 
 .profile-texts h3{
   font-size: 8rem;
   font-family: 'Major Mono Display', monospace;
   color: #ec7a7ad4;
-  margin-top: 8rem;
+  margin-top: 8.5rem;
 }
 
 .profile-texts p{
@@ -260,10 +296,6 @@
 .profile-texts p:nth-child(1){
   margin-bottom: 10px;
 }
-
-
-
-
 
 
 //-- 特殊文字 --//
