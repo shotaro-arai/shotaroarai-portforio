@@ -1,19 +1,35 @@
-# Shotaro Arai's portfolio
+# ShotaroArai's portfolio
 
 [![Image from Gyazo](https://i.gyazo.com/022b2d6cf888c0fccd0b03c37c2cce77.png)](https://gyazo.com/022b2d6cf888c0fccd0b03c37c2cce77)
 
 <br>
 
 # What
-わたしのポートフォリオです！<br>
+Webエンジニア 荒井翔太郎の<br>
+ポートフォリオです
+<br>
+<br>
+
+## URL<br>
 https://shotaroarai-portforio.herokuapp.com/
 
+<br>
+
+| 開発環境 |   |
+| ------- | - |
+| フレームワーク | ruby on rails ver.Rails 6.0.3.7 |
+| 言語 | html, css, ruby |
+| データベース | mySQL |
+| その他 | GitHub, Heroku |
+
+----------------------------------
 
 <br>
 <br>
 
 # Why
-Webエンジニアとしての成果物をより多くの人に知ってもらうため！
+色んな方に自分のことを<br>
+もっとよく知ってもらうため
 
 <br>
 <br>
@@ -30,9 +46,3 @@ Webエンジニアとしての成果物をより多くの人に知ってもら�
 ### 機能
 - Eメール送信機能
 
-<br>
-<br>
-ruby 2.6.5
-<br>
-Rails 6.0.3.7
-<br>
